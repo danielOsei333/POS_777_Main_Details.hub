@@ -1,0 +1,817 @@
+<html style="height: auto;">
+    <head>
+        <style type="text/css">table.dataTable thead .sorting:after { font-family: "Font Awesome 5 Free" !important; content: "\f0dc" !important; /* fa-sort */font-weight: 900 !important;padding-left: 3px !important;font-size: 20px !important;color: rgb(37, 42, 58) !important;} .swal-icon--error{border-color:#f27474;-webkit-animation:animateErrorIcon .5s;animation:animateErrorIcon .5s}.swal-icon--error__x-mark{position:relative;display:block;-webkit-animation:animateXMark .5s;animation:animateXMark .5s}.swal-icon--error__line{position:absolute;height:5px;width:47px;background-color:#f27474;display:block;top:37px;border-radius:2px}.swal-icon--error__line--left{-webkit-transform:rotate(45deg);transform:rotate(45deg);left:17px}.swal-icon--error__line--right{-webkit-transform:rotate(-45deg);transform:rotate(-45deg);right:16px}@-webkit-keyframes animateErrorIcon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}to{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);opacity:1}}@keyframes animateErrorIcon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}to{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);opacity:1}}@-webkit-keyframes animateXMark{0%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}50%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}80%{-webkit-transform:scale(1.15);transform:scale(1.15);margin-top:-6px}to{-webkit-transform:scale(1);transform:scale(1);margin-top:0;opacity:1}}@keyframes animateXMark{0%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}50%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}80%{-webkit-transform:scale(1.15);transform:scale(1.15);margin-top:-6px}to{-webkit-transform:scale(1);transform:scale(1);margin-top:0;opacity:1}}.swal-icon--warning{border-color:#f8bb86;-webkit-animation:pulseWarning .75s infinite alternate;animation:pulseWarning .75s infinite alternate}.swal-icon--warning__body{width:5px;height:47px;top:10px;border-radius:2px;margin-left:-2px}.swal-icon--warning__body,.swal-icon--warning__dot{position:absolute;left:50%;background-color:#f8bb86}.swal-icon--warning__dot{width:7px;height:7px;border-radius:50%;margin-left:-4px;bottom:-11px}@-webkit-keyframes pulseWarning{0%{border-color:#f8d486}to{border-color:#f8bb86}}@keyframes pulseWarning{0%{border-color:#f8d486}to{border-color:#f8bb86}}.swal-icon--success{border-color:#a5dc86}.swal-icon--success:after,.swal-icon--success:before{content:"";border-radius:50%;position:absolute;width:60px;height:120px;background:#fff;-webkit-transform:rotate(45deg);transform:rotate(45deg)}.swal-icon--success:before{border-radius:120px 0 0 120px;top:-7px;left:-33px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:60px 60px;transform-origin:60px 60px}.swal-icon--success:after{border-radius:0 120px 120px 0;top:-11px;left:30px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:0 60px;transform-origin:0 60px;-webkit-animation:rotatePlaceholder 4.25s ease-in;animation:rotatePlaceholder 4.25s ease-in}.swal-icon--success__ring{width:80px;height:80px;border:4px solid hsla(98,55%,69%,.2);border-radius:50%;box-sizing:content-box;position:absolute;left:-4px;top:-4px;z-index:2}.swal-icon--success__hide-corners{width:5px;height:90px;background-color:#fff;padding:1px;position:absolute;left:28px;top:8px;z-index:1;-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}.swal-icon--success__line{height:5px;background-color:#a5dc86;display:block;border-radius:2px;position:absolute;z-index:2}.swal-icon--success__line--tip{width:25px;left:14px;top:46px;-webkit-transform:rotate(45deg);transform:rotate(45deg);-webkit-animation:animateSuccessTip .75s;animation:animateSuccessTip .75s}.swal-icon--success__line--long{width:47px;right:8px;top:38px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-animation:animateSuccessLong .75s;animation:animateSuccessLong .75s}@-webkit-keyframes rotatePlaceholder{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}to{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@keyframes rotatePlaceholder{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}to{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@-webkit-keyframes animateSuccessTip{0%{width:0;left:1px;top:19px}54%{width:0;left:1px;top:19px}70%{width:50px;left:-8px;top:37px}84%{width:17px;left:21px;top:48px}to{width:25px;left:14px;top:45px}}@keyframes animateSuccessTip{0%{width:0;left:1px;top:19px}54%{width:0;left:1px;top:19px}70%{width:50px;left:-8px;top:37px}84%{width:17px;left:21px;top:48px}to{width:25px;left:14px;top:45px}}@-webkit-keyframes animateSuccessLong{0%{width:0;right:46px;top:54px}65%{width:0;right:46px;top:54px}84%{width:55px;right:0;top:35px}to{width:47px;right:8px;top:38px}}@keyframes animateSuccessLong{0%{width:0;right:46px;top:54px}65%{width:0;right:46px;top:54px}84%{width:55px;right:0;top:35px}to{width:47px;right:8px;top:38px}}.swal-icon--info{border-color:#c9dae1}.swal-icon--info:before{width:5px;height:29px;bottom:17px;border-radius:2px;margin-left:-2px}.swal-icon--info:after,.swal-icon--info:before{content:"";position:absolute;left:50%;background-color:#c9dae1}.swal-icon--info:after{width:7px;height:7px;border-radius:50%;margin-left:-3px;top:19px}.swal-icon{width:80px;height:80px;border-width:4px;border-style:solid;border-radius:50%;padding:0;position:relative;box-sizing:content-box;margin:20px auto}.swal-icon:first-child{margin-top:32px}.swal-icon--custom{width:auto;height:auto;max-width:100%;border:none;border-radius:0}.swal-icon img{max-width:100%;max-height:100%}.swal-title{color:rgba(0,0,0,.65);font-weight:600;text-transform:none;position:relative;display:block;padding:13px 16px;font-size:27px;line-height:normal;text-align:center;margin-bottom:0}.swal-title:first-child{margin-top:26px}.swal-title:not(:first-child){padding-bottom:0}.swal-title:not(:last-child){margin-bottom:13px}.swal-text{font-size:16px;position:relative;float:none;line-height:normal;vertical-align:top;text-align:left;display:inline-block;margin:0;padding:0 10px;font-weight:400;color:rgba(0,0,0,.64);max-width:calc(100% - 20px);overflow-wrap:break-word;box-sizing:border-box}.swal-text:first-child{margin-top:45px}.swal-text:last-child{margin-bottom:45px}.swal-footer{text-align:right;padding-top:13px;margin-top:13px;padding:13px 16px;border-radius:inherit;border-top-left-radius:0;border-top-right-radius:0}.swal-button-container{margin:5px;display:inline-block;position:relative}.swal-button{background-color:#7cd1f9;color:#fff;border:none;box-shadow:none;border-radius:5px;font-weight:600;font-size:14px;padding:10px 24px;margin:0;cursor:pointer}.swal-button:not([disabled]):hover{background-color:#78cbf2}.swal-button:active{background-color:#70bce0}.swal-button:focus{outline:none;box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(43,114,165,.29)}.swal-button[disabled]{opacity:.5;cursor:default}.swal-button::-moz-focus-inner{border:0}.swal-button--cancel{color:#555;background-color:#efefef}.swal-button--cancel:not([disabled]):hover{background-color:#e8e8e8}.swal-button--cancel:active{background-color:#d7d7d7}.swal-button--cancel:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(116,136,150,.29)}.swal-button--danger{background-color:#e64942}.swal-button--danger:not([disabled]):hover{background-color:#df4740}.swal-button--danger:active{background-color:#cf423b}.swal-button--danger:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(165,43,43,.29)}.swal-content{padding:0 20px;margin-top:20px;font-size:medium}.swal-content:last-child{margin-bottom:20px}.swal-content__input,.swal-content__textarea{-webkit-appearance:none;background-color:#fff;border:none;font-size:14px;display:block;box-sizing:border-box;width:100%;border:1px solid rgba(0,0,0,.14);padding:10px 13px;border-radius:2px;transition:border-color .2s}.swal-content__input:focus,.swal-content__textarea:focus{outline:none;border-color:#6db8ff}.swal-content__textarea{resize:vertical}.swal-button--loading{color:transparent}.swal-button--loading~.swal-button__loader{opacity:1}.swal-button__loader{position:absolute;height:auto;width:43px;z-index:2;left:50%;top:50%;-webkit-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%);text-align:center;pointer-events:none;opacity:0}.swal-button__loader div{display:inline-block;float:none;vertical-align:baseline;width:9px;height:9px;padding:0;border:none;margin:2px;opacity:.4;border-radius:7px;background-color:hsla(0,0%,100%,.9);transition:background .2s;-webkit-animation:swal-loading-anim 1s infinite;animation:swal-loading-anim 1s infinite}.swal-button__loader div:nth-child(3n+2){-webkit-animation-delay:.15s;animation-delay:.15s}.swal-button__loader div:nth-child(3n+3){-webkit-animation-delay:.3s;animation-delay:.3s}@-webkit-keyframes swal-loading-anim{0%{opacity:.4}20%{opacity:.4}50%{opacity:1}to{opacity:.4}}@keyframes swal-loading-anim{0%{opacity:.4}20%{opacity:.4}50%{opacity:1}to{opacity:.4}}.swal-overlay{position:fixed;top:0;bottom:0;left:0;right:0;text-align:center;font-size:0;overflow-y:auto;background-color:rgba(0,0,0,.4);z-index:10000;pointer-events:none;opacity:0;transition:opacity .3s}.swal-overlay:before{content:" ";display:inline-block;vertical-align:middle;height:100%}.swal-overlay--show-modal{opacity:1;pointer-events:auto}.swal-overlay--show-modal .swal-modal{opacity:1;pointer-events:auto;box-sizing:border-box;-webkit-animation:showSweetAlert .3s;animation:showSweetAlert .3s;will-change:transform}.swal-modal{width:478px;opacity:0;pointer-events:none;background-color:#fff;text-align:center;border-radius:5px;position:static;margin:20px auto;display:inline-block;vertical-align:middle;-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:50% 50%;transform-origin:50% 50%;z-index:10001;transition:opacity .2s,-webkit-transform .3s;transition:transform .3s,opacity .2s;transition:transform .3s,opacity .2s,-webkit-transform .3s}@media (max-width:500px){.swal-modal{width:calc(100% - 20px)}}@-webkit-keyframes showSweetAlert{0%{-webkit-transform:scale(1);transform:scale(1)}1%{-webkit-transform:scale(.5);transform:scale(.5)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}to{-webkit-transform:scale(1);transform:scale(1)}}@keyframes showSweetAlert{0%{-webkit-transform:scale(1);transform:scale(1)}1%{-webkit-transform:scale(.5);transform:scale(.5)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}to{-webkit-transform:scale(1);transform:scale(1)}}</style>
+<!-- TABLES CSS CODE -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>States List</title>
+  <link rel="shortcut icon" href="https://pos.creatantech.com/theme/images/favicon.ico">
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.6 -->
+  <link rel="stylesheet" href="https://pos.creatantech.com/theme/bootstrap/css/bootstrap.min.css">
+   <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://pos.creatantech.com/theme/css/font-awesome-4.7.0/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://pos.creatantech.com/theme/css/ionicons-2.0.1/css/ionicons.min.css">
+  <!-- Select2 -->
+  <link rel="stylesheet" href="https://pos.creatantech.com/theme/plugins/select2/select2.min.css">
+    <!-- DataTables -->
+  <link rel="stylesheet" href="https://pos.creatantech.com/theme/plugins/DataTables-1.10.18/css/dataTables.bootstrap.min.css">
+  <link rel="stylesheet" href="https://pos.creatantech.com/theme/plugins/DataTables-1.10.18/extensions/FixedHeader-3.1.4/css/fixedHeader.dataTables.min.css">
+  <link rel="stylesheet" href="https://pos.creatantech.com/theme/plugins/DataTables-1.10.18/extensions/FixedHeader-3.1.4/css/fixedHeader.bootstrap.min.css">
+  <link rel="stylesheet" href="https://pos.creatantech.com/theme/plugins/DataTables-1.10.18/extensions/Responsive-2.2.2/css/responsive.dataTables.min.css">
+  <link rel="stylesheet" href="https://pos.creatantech.com/theme/plugins/DataTables-1.10.18/extensions/Responsive-2.2.2/css/responsive.bootstrap.min.css">  
+  <link rel="stylesheet" href="https://pos.creatantech.com/theme/plugins/DataTables-1.10.18/extensions/Buttons-1.5.4/css/buttons.bootstrap.min.css">  
+  <!-- end -->
+  <!-- Theme style -->
+  <link rel="stylesheet" href="https://pos.creatantech.com/theme/dist/css/AdminLTE.min.css">
+  <!-- AdminLTE Skins. Choose a skin from the css/skins
+       folder instead of downloading all of them to reduce the load. -->
+  <link rel="stylesheet" href="https://pos.creatantech.com/theme/dist/css/skins/_all-skins.min.css">
+ <!--Toastr notification -->
+  <link rel="stylesheet" href="https://pos.creatantech.com/theme/toastr/toastr.css">
+  <!--Toastr notification end-->
+  <!-- iCheck -->
+  <link rel="stylesheet" href="https://pos.creatantech.com/theme/plugins/iCheck/square/orange.css">
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--Custom Css File-->
+  <link rel="stylesheet" href="https://pos.creatantech.com/theme/dist/css/custom.css">
+  <!-- Pace Loader -->
+  <link rel="stylesheet" href="https://pos.creatantech.com/theme/plugins/pace/pace.min.css">
+    <!-- Theme color finder -->
+  <script type="text/javascript">
+  var default_skin = 'skin-blue';
+  var theme_skin = (typeof (Storage) !== "undefined") ? localStorage.getItem('skin') : default_skin;
+  theme_skin = (theme_skin=='' || theme_skin==null) ? default_skin : theme_skin;
+  var sidebar_collapse = (typeof (Storage) !== "undefined") ? localStorage.getItem('collapse') : default_skin;
+  </script>
+  <!-- jQuery 2.2.3 -->
+  <script src="https://pos.creatantech.com/theme/plugins/jQuery/jquery-2.2.3.min.js"></script>
+      <!-- Theme color finder -->
+  <link rel="stylesheet" href="https://pos.creatantech.com/theme/css/ionicons-2.0.1/css/ionicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
+  </head>
+
+<body class="sidebar-mini skin-purple   pace-done pace-done" style="height: auto;"><div class="pace  pace-inactive pace-inactive"><div class="pace-progress" style="transform: translate3d(100%, 0px, 0px);" data-progress-text="100%" data-progress="99">
+  <div class="pace-progress-inner"></div>
+</div>
+<div class="pace-activity"></div></div>
+<div class="wrapper" style="height: auto;">
+
+  <!-- Left side column. contains the logo and sidebar -->
+  
+  <!-- Change the theme color if it is set -->
+   <script type="text/javascript">
+    if(theme_skin!='skin-blue'){
+      $("body").addClass(theme_skin);
+      $("body").removeClass('skin-blue');
+    }
+    if(sidebar_collapse=='true'){
+      $("body").addClass('sidebar-collapse');
+    }
+  </script> 
+  <!-- end -->
+
+<header class="main-header">
+
+    <!-- Logo -->
+    <a href="index.html" class="logo">
+      <span class="logo-mini"><b>POS</b></span>
+      <span class="logo-lg"><b>Ultimate Inventory with POS</b></span>
+    </a>
+
+    <!-- Header Navbar: style can be found in header.less -->
+    <nav class="navbar navbar-static-top">
+      <!-- Sidebar toggle button-->
+      <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+        <span class="sr-only">Toggle navigation</span>
+      </a>
+      <div class="btn-group hidden-xs">
+            <a href="#" class="btn navbar-btn btn-success dropdown-toggle " data-toggle="dropdown" aria-expanded="false">
+                <i class="fa fa-plus"></i> 
+            </a>
+            <ul class="dropdown-menu">
+                                                      <li class="border_bottom">
+                    <a href="purchase.add.html"><h4><i class="fa fa-plus text-green"></i> Purchase</h4></a>
+                  </li> 
+                                                                        <li class="border_bottom">
+                    <a href="suppliers.update.html"><h4><i class="fa fa-plus text-green"></i> Supplier</h4></a>
+                  </li>
+                                                      <li class="border_bottom">
+                    <a href="items.update.html"><h4><i class="fa fa-plus text-green"></i> Item</h4></a>
+                  </li> 
+                                                      <li class="border_bottom">
+                    <a href="expense-add.html"><h4><i class="fa fa-plus text-green"></i> Expense</h4></a>
+                  </li>  
+                              </ul>
+        </div>
+      <!-- Navbar Right Menu -->
+      <div class="navbar-custom-menu">
+       
+        <ul class="nav navbar-nav">
+          <!-- <li class="text-center hidden-xs" id="">
+            <form class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control" id="navbar-search-input" placeholder="Search Sales Invoice">
+            </div>
+          </form> 
+          </li> -->
+          <!-- User Account Menu -->
+            
+            <li class="dropdown tasks-menu">
+            <a href="#" class="dropdown-toggle text-right" data-toggle="dropdown" title="App Language">
+              <i class="fa fa-language "></i>
+                    English            </a>
+            <ul class="dropdown-menu " style="width: auto;height: auto;">
+              <li>
+                <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 200px;"><ul class="menu" style="overflow: hidden; width: 100%; height: 200px;">
+                                      <li>
+                    <a href="https://pos.creatantech.com/site/langauge/9"><h3 class="">Albanian</h3></a>
+                  </li>  
+                                      <li>
+                    <a href="https://pos.creatantech.com/site/langauge/8"><h3 class="">Arabic</h3></a>
+                  </li>  
+                                      <li>
+                    <a href="https://pos.creatantech.com/site/langauge/11"><h3 class="">Bangla</h3></a>
+                  </li>  
+                                      <li>
+                    <a href="https://pos.creatantech.com/site/langauge/5"><h3 class="">Chinese</h3></a>
+                  </li>  
+                                      <li>
+                    <a href="https://pos.creatantech.com/site/langauge/10"><h3 class="">Dutch</h3></a>
+                  </li>  
+                                      <li>
+                    <a href="https://pos.creatantech.com/site/langauge/1"><h3 class="text-blue">English</h3></a>
+                  </li>  
+                                      <li>
+                    <a href="https://pos.creatantech.com/site/langauge/16"><h3 class="">French</h3></a>
+                  </li>  
+                                      <li>
+                    <a href="https://pos.creatantech.com/site/langauge/2"><h3 class="">Hindi</h3></a>
+                  </li>  
+                                      <li>
+                    <a href="https://pos.creatantech.com/site/langauge/4"><h3 class="">Indonesian</h3></a>
+                  </li>  
+                                      <li>
+                    <a href="https://pos.creatantech.com/site/langauge/13"><h3 class="">Italian</h3></a>
+                  </li>  
+                                      <li>
+                    <a href="https://pos.creatantech.com/site/langauge/3"><h3 class="">Kannada</h3></a>
+                  </li>  
+                                      <li>
+                    <a href="https://pos.creatantech.com/site/langauge/15"><h3 class="">Khmer</h3></a>
+                  </li>  
+                                      <li>
+                    <a href="https://pos.creatantech.com/site/langauge/14"><h3 class="">Marathi</h3></a>
+                  </li>  
+                                      <li>
+                    <a href="https://pos.creatantech.com/site/langauge/6"><h3 class="">Russian</h3></a>
+                  </li>  
+                                      <li>
+                    <a href="https://pos.creatantech.com/site/langauge/7"><h3 class="">Spanish</h3></a>
+                  </li>  
+                                      <li>
+                    <a href="https://pos.creatantech.com/site/langauge/12"><h3 class="">Urdu</h3></a>
+                  </li>  
+                                  </ul><div class="slimScrollBar" style="background: rgb(0, 0, 0); width: 3px; position: absolute; top: 0px; opacity: 0.4; display: block; border-radius: 7px; z-index: 99; right: 1px;"></div><div class="slimScrollRail" style="width: 3px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;"></div></div>
+              </li>
+            </ul>
+          </li>
+          
+          
+          <li class="text-center hidden-xs" id="">
+            <a title="Dashboard" href="index.html"><i class="fa fa-dashboard "></i> Dashboard</a>
+          </li>
+          <li class="dropdown user user-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <img src="Animation-1745750508432.gif" class="user-image" alt="User Image">
+              <span class="hidden-xs">Purchase</span>
+            </a>
+
+            <ul class="dropdown-menu">
+              <!-- User image -->
+              <li class="user-header">
+                <img src="Animation-1745750508432.gif" class="img-circle" alt="User Image">
+
+                <p>
+                 Purchase <small>Year 2025</small>
+                </p>
+              </li>
+              <!-- Menu Body -->
+              <!-- Menu Footer-->
+              <li class="user-footer">
+                <div class="pull-left">
+                  <a href="https://pos.creatantech.com/users/edit/15" class="btn btn-default btn-flat">Profile</a>
+                </div>
+                <div class="pull-right">
+                  <a href="https://pos.creatantech.com/logout" class="btn btn-default btn-flat">Sign out</a>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li class="hidden-xs">
+            <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+          </li>
+        </ul>
+      </div>
+
+    </nav>
+  </header>
+ 
+  <!-- Left side column. contains the logo and sidebar -->
+  <aside class="main-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar" style="height: auto;">
+      <div class="user-panel">
+        <div class="pull-left image">
+            <dotlottie-player class="img-circle" src="https://lottie.host/0b51690c-7950-477a-9fc7-b69af704367e/q52JptTeZz.lottie" background="transparent" speed="1" style="width: 115%; position: relative; right: 9px;top: 26px;  border-end-end-radius: 70px;  transform: translate3d(0px, 0px, 0px); height: 100%" loop autoplay></dotlottie-player>
+        </div>
+        <div class="pull-left info">
+          <p>Purchase<i class="fa fa-fw fa-check-circle text-aqua"></i></p>
+          <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+        </div>
+      </div>
+      <!-- sidebar menu: : style can be found in sidebar.less -->
+      <ul class="sidebar-menu">
+        <!--<li class="header">MAIN NAVIGATION</li>-->
+		<li class="dashboard-active-li "><a href="index.html"><i class="fa fa-dashboard text-aqua"></i> <span>Dashboard</span></a></li>
+		
+		
+		<!--<li class="header">SALES</li>-->
+    
+		<!--<li class="header">CUSTOMERS</li>-->
+    
+    		<li class="purchase-list-active-li purchase-active-li purchase-returns-list-active-li purchase-returns-active-li treeview">
+          <a href="#">
+            <i class="fa fa-th-large text-aqua"></i> <span>Purchase</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+                		    <li class="purchase-active-li"><a href="purchase.add.html"><i class="fa fa-plus-square-o "></i> <span>New Purchase</span></a></li>
+                                    <li class="purchase-list-active-li"><a href="purchase.list.html"><i class="fa fa-list "></i> <span>Purchase List</span></a></li>
+                                              </ul>
+        </li>
+                        <li class="suppliers-list-active-li suppliers-active-li import_suppliers-active-li treeview">
+          <a href="#">
+            <i class="fa fa-user-plus text-aqua"></i> <span>Suppliers</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+                <li class="suppliers-active-li"><a href="suppliers.update.html"><i class="fa fa-plus-square-o "></i> <span>New Supplier</span></a></li>
+                <li class="suppliers-list-active-li"><a href="suppliers.list.html"><i class="fa fa-list "></i> <span>Suppliers List</span></a></li>              
+          </ul>
+        </li>
+                
+                <li class="items-list-active-li items-active-li  category-view-active-li category-active-li brand-active-li brand-view-active-li labels-active-li import_items-active-li treeview">
+          <a href="#">
+            <i class="fa fa-cubes text-aqua"></i> <span>Items</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+                        <li class="items-active-li"><a href="items.update.html"><i class="fa fa-plus-square-o "></i> <span>New Item</span></a></li>
+                                    <li class="items-list-active-li"><a href="items.list.html"><i class="fa fa-list "></i> <span>Items List</span></a></li>
+                                    <li class="category-active-li"><a href="category.update.html"><i class="fa fa-plus-square-o "></i> <span>New Category</span></a></li>
+                                    <li class="category-view-active-li"><a href="category.list.html"><i class="fa fa-list "></i> <span>Categories List</span></a></li>
+                                                            <li class="labels-active-li"><a href="print.labels.html"><i class="fa fa-barcode "></i> <span>Print Labels</span></a></li>
+            
+            
+
+          </ul>
+        </li>
+        
+               <li class="expense-list-active-li expense-active-li expense-category-active-li expense-category-list-active-li treeview">
+          <a href="#">
+            <i class="fa fa-minus-circle text-aqua"></i> <span>Expenses</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+                        <li class="expense-active-li"><a href="expense-add.html"><i class="fa fa-plus-square-o "></i> <span>New Expense</span></a></li>
+                                    <li class="expense-list-active-li"><a href="expense.list.html"><i class="fa fa-list "></i> <span>Expenses List</span></a></li>
+                                    <li class="expense-category-active-li"><a href="category.update.html"><i class="fa fa-plus-square-o "></i> <span>New Category</span></a></li>
+                                    <li class="expense-category-list-active-li "><a href="category.list.html"><i class="fa fa-list "></i> <span>Categories List</span></a></li>
+            
+          </ul>
+        </li>
+        		
+
+        
+		
+
+				<li class="country-active-li city-list-active-li country-list-active-li state-active-li state-list-active-li city-active-li treeview active">
+          <a href="#">
+            <i class="fa fa-paper-plane-o text-aqua"></i> <span>Places</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+                        <li class="country-active-li"><a href="country.update.html"><i class="fa fa-plus-square-o "></i> <span>New Country</span></a></li>
+                                    <li class="country-list-active-li "><a href="country.list.html"><i class="fa fa-list "></i> <span>Countries List</span></a></li>
+                                    <li class="state-active-li"><a href="state.update.html"><i class="fa fa-plus-square-o "></i> <span>New State</span></a></li>
+                                    <li class="state-list-active-li  active"><a href="state.list.html"><i class="fa fa-list "></i> <span>States List</span></a></li>
+                </ul>
+        </li>
+    
+   
+		<!--<li class="header">REPORTS</li>-->
+    		<li class="report-sales-active-li report-sales-return-active-li report-purchase-active-li report-purchase-return-active-li report-expense-active-li report-profit-loss-active-li report-stock-active-li report-purchase-payments-active-li report-sales-item-active-li report-sales-payments-active-li report-expired-items-active-li report-purchase-item-active-li treeview">
+          <a href="#">
+            <i class="fa fa-bar-chart text-aqua"></i> <span>Reports</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+
+            
+                        <li class="report-purchase-active-li"><a href="purchase.reports.html"><i class="fa fa-files-o "></i> <span>Purchase Report</span></a></li>
+                        
+                        <li class="report-purchase-payments-active-li"><a href="purchase_payments.html"><i class="fa fa-files-o "></i> <span>Purchase Payments Report</span></a></li>
+            
+                                                            
+            
+
+            
+                        
+            
+            
+            
+            
+            	       </ul>
+      </li>
+      
+	   <!-- Users -->
+         <!-- SMS -->
+     		<!--<li class="header">SETTINGS</li>-->
+    		<li class=" company-profile-active-li site-settings-active-li  change-pass-active-li dbbackup-active-li warehouse-active-li warehouse-list-active-li tax-active-li currency-view-active-li currency-active-li  database_updater-active-li tax-list-active-li units-list-active-li unit-active-li payment_types_list-active-li payment_types-active-li treeview">
+          <a href="#">
+            <i class="fa fa-gears text-aqua"></i> <span>Settings</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+                        
+            
+                        
+            
+                        <li class="change-pass-active-li"><a href="password_reset.html"><i class="fa fa-lock "></i> <span>Change Password</span></a></li>
+
+
+                        
+		   </ul>
+        </li>
+                      </ul>
+    </section>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper" style="min-height: 537px;">
+    <!-- Content Header (Page header) -->
+              <div class="subsection-inner">
+        <dotlottie-player src="https://lottie.host/09ca7849-096a-4bf5-b38c-d7092d7808b4/INMkYkmh2i.lottie" background="transparent" speed="1" style="width: 870px; top: -189px;right: -364px; display:flex;  margin: 4px;  position: absolute; height: 967px" loop autoplay></dotlottie-player>
+   </div>
+    <section class="content-header">
+      <h1>
+        States List<small>View/Search States</small>
+      </h1>
+      <ol class="breadcrumb">
+        <li><a href="index.html"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li class="active">States List</li>
+      </ol>
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="row">
+        <!-- ********** ALERT MESSAGE START******* -->
+        <div class="col-md-12">
+      <!-- ********** ALERT MESSAGE START******* -->
+                      <div class="alert alert-success  text-left"  style=" background-color: #072E33 !important;">
+                 <a href="javascript:void()" class="close" data-dismiss="alert" aria-label="close">×</a>
+                <strong>
+                  Ultimate Inventory with POS new Version 2.4 released , Faster and Customizable Application Software. If you have any queries please message <a target="_blank" href="https://codecanyon.net/item/ultimate-inventory-with-pos/23992003/comments">here</a>. [Some features are disabled in demo and it will be reset after each hour.]
+                </strong>
+              </div>
+                                <!-- ********** ALERT MESSAGE END******* -->
+     </div>        <!-- ********** ALERT MESSAGE END******* -->
+        <div class="col-xs-12">
+          <div class="box">
+            <div class="box-header with-border">
+              <h3 class="box-title">States List</h3>
+                            <div class="box-tools">
+                <a class="btn btn-block btn-info" href="state.update.html">
+                <i class="fa fa-plus"></i> New State</a>
+              </div>
+                          </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+              <div id="example2_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer"><div class="row"><div class="col-sm-6"><div class="dataTables_length" id="example2_length"><label>Show <select name="example2_length" aria-controls="example2" class="form-control input-sm"><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select> entries</label></div></div><div class="col-sm-6"><div id="example2_filter" class="dataTables_filter"><label>Search:<input type="search" class="form-control input-sm" placeholder="" aria-controls="example2"></label></div></div></div><div class="row"><div class="col-sm-12"><table id="example2" class="table table-bordered table-striped dataTable no-footer dtr-inline" width="100%" role="grid" aria-describedby="example2_info" style="width: 100%;"><thead class="bg-primary ">
+                <tr role="row"><th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" style="width: 228.333px;" aria-label="State Name: activate to sort column ascending">State Name</th><th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" style="width: 272.333px;" aria-label="Country Name: activate to sort column ascending">Country Name</th><th class="sorting" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" style="width: 151.333px;" aria-label="Status: activate to sort column ascending">Status</th><th class="sorting_disabled" rowspan="1" colspan="1" style="width: 202px;" aria-label="Action">Action</th></tr>
+                </thead>
+                
+                <tbody>
+				
+                <tr role="row" class="odd"><td tabindex="0">Delhi</td><td>India</td><td><span onclick="update_status(53,0)" id="span_53" class="label label-success" style="cursor:pointer">Active </span></td><td><div class="btn-group" title="View Account">
+										<a class="btn btn-primary btn-o dropdown-toggle" data-toggle="dropdown" href="#">
+											Action <span class="caret"></span>
+										</a>
+										<ul role="menu" class="dropdown-menu dropdown-light pull-right"><li>
+												<a title="Edit Record ?" href="state/update/53">
+													<i class="fa fa-fw fa-edit text-blue"></i>Edit
+												</a>
+											</li><li>
+												<a style="cursor:pointer" title="Delete Record ?" onclick="delete_state(53)">
+													<i class="fa fa-fw fa-trash text-red"></i>Delete
+												</a>
+											</li>
+											
+										</ul>
+									</div></td></tr><tr role="row" class="even"><td tabindex="0">New York</td><td>USA</td><td><span onclick="update_status(52,0)" id="span_52" class="label label-success" style="cursor:pointer">Active </span></td><td><div class="btn-group" title="View Account">
+										<a class="btn btn-primary btn-o dropdown-toggle" data-toggle="dropdown" href="#">
+											Action <span class="caret"></span>
+										</a>
+										<ul role="menu" class="dropdown-menu dropdown-light pull-right"><li>
+												<a title="Edit Record ?" href="state/update/52">
+													<i class="fa fa-fw fa-edit text-blue"></i>Edit
+												</a>
+											</li><li>
+												<a style="cursor:pointer" title="Delete Record ?" onclick="delete_state(52)">
+													<i class="fa fa-fw fa-trash text-red"></i>Delete
+												</a>
+											</li>
+											
+										</ul>
+									</div></td></tr><tr role="row" class="odd"><td tabindex="0">West Bengal</td><td>India</td><td><span onclick="update_status(51,0)" id="span_51" class="label label-success" style="cursor:pointer">Active </span></td><td><div class="btn-group" title="View Account">
+										<a class="btn btn-primary btn-o dropdown-toggle" data-toggle="dropdown" href="#">
+											Action <span class="caret"></span>
+										</a>
+										<ul role="menu" class="dropdown-menu dropdown-light pull-right"><li>
+												<a title="Edit Record ?" href="state/update/51">
+													<i class="fa fa-fw fa-edit text-blue"></i>Edit
+												</a>
+											</li><li>
+												<a style="cursor:pointer" title="Delete Record ?" onclick="delete_state(51)">
+													<i class="fa fa-fw fa-trash text-red"></i>Delete
+												</a>
+											</li>
+											
+										</ul>
+									</div></td></tr><tr role="row" class="even"><td tabindex="0">Uttarakhand</td><td>India</td><td><span onclick="update_status(50,0)" id="span_50" class="label label-success" style="cursor:pointer">Active </span></td><td><div class="btn-group" title="View Account">
+										<a class="btn btn-primary btn-o dropdown-toggle" data-toggle="dropdown" href="#">
+											Action <span class="caret"></span>
+										</a>
+										<ul role="menu" class="dropdown-menu dropdown-light pull-right"><li>
+												<a title="Edit Record ?" href="state/update/50">
+													<i class="fa fa-fw fa-edit text-blue"></i>Edit
+												</a>
+											</li><li>
+												<a style="cursor:pointer" title="Delete Record ?" onclick="delete_state(50)">
+													<i class="fa fa-fw fa-trash text-red"></i>Delete
+												</a>
+											</li>
+											
+										</ul>
+									</div></td></tr><tr role="row" class="odd"><td tabindex="0">Uttar Pradesh</td><td>India</td><td><span onclick="update_status(49,0)" id="span_49" class="label label-success" style="cursor:pointer">Active </span></td><td><div class="btn-group" title="View Account">
+										<a class="btn btn-primary btn-o dropdown-toggle" data-toggle="dropdown" href="#">
+											Action <span class="caret"></span>
+										</a>
+										<ul role="menu" class="dropdown-menu dropdown-light pull-right"><li>
+												<a title="Edit Record ?" href="state/update/49">
+													<i class="fa fa-fw fa-edit text-blue"></i>Edit
+												</a>
+											</li><li>
+												<a style="cursor:pointer" title="Delete Record ?" onclick="delete_state(49)">
+													<i class="fa fa-fw fa-trash text-red"></i>Delete
+												</a>
+											</li>
+											
+										</ul>
+									</div></td></tr><tr role="row" class="even"><td tabindex="0">Tripura</td><td>India</td><td><span onclick="update_status(48,0)" id="span_48" class="label label-success" style="cursor:pointer">Active </span></td><td><div class="btn-group" title="View Account">
+										<a class="btn btn-primary btn-o dropdown-toggle" data-toggle="dropdown" href="#">
+											Action <span class="caret"></span>
+										</a>
+										<ul role="menu" class="dropdown-menu dropdown-light pull-right"><li>
+												<a title="Edit Record ?" href="state/update/48">
+													<i class="fa fa-fw fa-edit text-blue"></i>Edit
+												</a>
+											</li><li>
+												<a style="cursor:pointer" title="Delete Record ?" onclick="delete_state(48)">
+													<i class="fa fa-fw fa-trash text-red"></i>Delete
+												</a>
+											</li>
+											
+										</ul>
+									</div></td></tr><tr role="row" class="odd"><td tabindex="0">Telangana</td><td>India</td><td><span onclick="update_status(47,0)" id="span_47" class="label label-success" style="cursor:pointer">Active </span></td><td><div class="btn-group" title="View Account">
+										<a class="btn btn-primary btn-o dropdown-toggle" data-toggle="dropdown" href="#">
+											Action <span class="caret"></span>
+										</a>
+										<ul role="menu" class="dropdown-menu dropdown-light pull-right"><li>
+												<a title="Edit Record ?" href="state/update/47">
+													<i class="fa fa-fw fa-edit text-blue"></i>Edit
+												</a>
+											</li><li>
+												<a style="cursor:pointer" title="Delete Record ?" onclick="delete_state(47)">
+													<i class="fa fa-fw fa-trash text-red"></i>Delete
+												</a>
+											</li>
+											
+										</ul>
+									</div></td></tr><tr role="row" class="even"><td tabindex="0">Tamil Nadu</td><td>India</td><td><span onclick="update_status(46,0)" id="span_46" class="label label-success" style="cursor:pointer">Active </span></td><td><div class="btn-group" title="View Account">
+										<a class="btn btn-primary btn-o dropdown-toggle" data-toggle="dropdown" href="#">
+											Action <span class="caret"></span>
+										</a>
+										<ul role="menu" class="dropdown-menu dropdown-light pull-right"><li>
+												<a title="Edit Record ?" href="state/update/46">
+													<i class="fa fa-fw fa-edit text-blue"></i>Edit
+												</a>
+											</li><li>
+												<a style="cursor:pointer" title="Delete Record ?" onclick="delete_state(46)">
+													<i class="fa fa-fw fa-trash text-red"></i>Delete
+												</a>
+											</li>
+											
+										</ul>
+									</div></td></tr><tr role="row" class="odd"><td tabindex="0">Sikkim</td><td>India</td><td><span onclick="update_status(45,0)" id="span_45" class="label label-success" style="cursor:pointer">Active </span></td><td><div class="btn-group" title="View Account">
+										<a class="btn btn-primary btn-o dropdown-toggle" data-toggle="dropdown" href="#">
+											Action <span class="caret"></span>
+										</a>
+										<ul role="menu" class="dropdown-menu dropdown-light pull-right"><li>
+												<a title="Edit Record ?" href="state/update/45">
+													<i class="fa fa-fw fa-edit text-blue"></i>Edit
+												</a>
+											</li><li>
+												<a style="cursor:pointer" title="Delete Record ?" onclick="delete_state(45)">
+													<i class="fa fa-fw fa-trash text-red"></i>Delete
+												</a>
+											</li>
+											
+										</ul>
+									</div></td></tr><tr role="row" class="even"><td tabindex="0">Rajasthan</td><td>India</td><td><span onclick="update_status(44,0)" id="span_44" class="label label-success" style="cursor:pointer">Active </span></td><td><div class="btn-group" title="View Account">
+										<a class="btn btn-primary btn-o dropdown-toggle" data-toggle="dropdown" href="#">
+											Action <span class="caret"></span>
+										</a>
+										<ul role="menu" class="dropdown-menu dropdown-light pull-right"><li>
+												<a title="Edit Record ?" href="state/update/44">
+													<i class="fa fa-fw fa-edit text-blue"></i>Edit
+												</a>
+											</li><li>
+												<a style="cursor:pointer" title="Delete Record ?" onclick="delete_state(44)">
+													<i class="fa fa-fw fa-trash text-red"></i>Delete
+												</a>
+											</li>
+											
+										</ul>
+									</div></td></tr></tbody>
+               
+              </table><div id="example2_processing" class="dataTables_processing panel panel-default" style="display: none;">Processing...</div></div></div><div class="row"><div class="col-sm-5"><div class="dataTables_info" id="example2_info" role="status" aria-live="polite">Showing 1 to 10 of 31 entries</div></div><div class="col-sm-7"><div class="dataTables_paginate paging_simple_numbers" id="example2_paginate"><ul class="pagination"><li class="paginate_button previous disabled" id="example2_previous"><a href="#" aria-controls="example2" data-dt-idx="0" tabindex="0">Previous</a></li><li class="paginate_button active"><a href="#" aria-controls="example2" data-dt-idx="1" tabindex="0">1</a></li><li class="paginate_button "><a href="#" aria-controls="example2" data-dt-idx="2" tabindex="0">2</a></li><li class="paginate_button "><a href="#" aria-controls="example2" data-dt-idx="3" tabindex="0">3</a></li><li class="paginate_button "><a href="#" aria-controls="example2" data-dt-idx="4" tabindex="0">4</a></li><li class="paginate_button next" id="example2_next"><a href="#" aria-controls="example2" data-dt-idx="5" tabindex="0">Next</a></li></ul></div></div></div></div>
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+        <!-- /.col -->
+      </div>
+      <!-- /.row -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+  <footer class="main-footer">
+    <div class="pull-right hidden-xs">
+      <b>Ultimate Inventory with POS -v2.4</b> 
+    </div>
+    <strong>Copyright © 2025 All rights reserved.</strong>
+  </footer>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Create the tabs -->
+    <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
+      <li>
+      </li>
+    </ul>
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <div class="tab-pane" id="control-sidebar-home-tab">
+        
+      </div><div id="control-sidebar-theme-demo-options-tab" class="tab-pane active"><div><h4 class="control-sidebar-heading">Skins</h4><ul class="list-unstyled clearfix"><li style="float:left; width: 33.33333%; padding: 5px;"><a href="javascript:void(0);" data-skin="skin-blue" style="display: block; box-shadow: 0 0 3px rgba(0,0,0,0.4)" class="clearfix full-opacity-hover"><div><span style="display:block; width: 20%; float: left; height: 7px; background: #367fa9;"></span><span class="bg-light-blue" style="display:block; width: 80%; float: left; height: 7px;"></span></div><div><span style="display:block; width: 20%; float: left; height: 20px; background: #222d32;"></span><span style="display:block; width: 80%; float: left; height: 20px; background: #f4f5f7;"></span></div></a><p class="text-center no-margin">Blue</p></li><li style="float:left; width: 33.33333%; padding: 5px;"><a href="javascript:void(0);" data-skin="skin-black" style="display: block; box-shadow: 0 0 3px rgba(0,0,0,0.4)" class="clearfix full-opacity-hover"><div style="box-shadow: 0 0 2px rgba(0,0,0,0.1)" class="clearfix"><span style="display:block; width: 20%; float: left; height: 7px; background: #fefefe;"></span><span style="display:block; width: 80%; float: left; height: 7px; background: #fefefe;"></span></div><div><span style="display:block; width: 20%; float: left; height: 20px; background: #222;"></span><span style="display:block; width: 80%; float: left; height: 20px; background: #f4f5f7;"></span></div></a><p class="text-center no-margin">Black</p></li><li style="float:left; width: 33.33333%; padding: 5px;"><a href="javascript:void(0);" data-skin="skin-purple" style="display: block; box-shadow: 0 0 3px rgba(0,0,0,0.4)" class="clearfix full-opacity-hover"><div><span style="display:block; width: 20%; float: left; height: 7px;" class="bg-purple-active"></span><span class="bg-purple" style="display:block; width: 80%; float: left; height: 7px;"></span></div><div><span style="display:block; width: 20%; float: left; height: 20px; background: #222d32;"></span><span style="display:block; width: 80%; float: left; height: 20px; background: #f4f5f7;"></span></div></a><p class="text-center no-margin">Purple</p></li><li style="float:left; width: 33.33333%; padding: 5px;"><a href="javascript:void(0);" data-skin="skin-green" style="display: block; box-shadow: 0 0 3px rgba(0,0,0,0.4)" class="clearfix full-opacity-hover"><div><span style="display:block; width: 20%; float: left; height: 7px;" class="bg-green-active"></span><span class="bg-green" style="display:block; width: 80%; float: left; height: 7px;"></span></div><div><span style="display:block; width: 20%; float: left; height: 20px; background: #222d32;"></span><span style="display:block; width: 80%; float: left; height: 20px; background: #f4f5f7;"></span></div></a><p class="text-center no-margin">Green</p></li><li style="float:left; width: 33.33333%; padding: 5px;"><a href="javascript:void(0);" data-skin="skin-red" style="display: block; box-shadow: 0 0 3px rgba(0,0,0,0.4)" class="clearfix full-opacity-hover"><div><span style="display:block; width: 20%; float: left; height: 7px;" class="bg-red-active"></span><span class="bg-red" style="display:block; width: 80%; float: left; height: 7px;"></span></div><div><span style="display:block; width: 20%; float: left; height: 20px; background: #222d32;"></span><span style="display:block; width: 80%; float: left; height: 20px; background: #f4f5f7;"></span></div></a><p class="text-center no-margin">Red</p></li><li style="float:left; width: 33.33333%; padding: 5px;"><a href="javascript:void(0);" data-skin="skin-yellow" style="display: block; box-shadow: 0 0 3px rgba(0,0,0,0.4)" class="clearfix full-opacity-hover"><div><span style="display:block; width: 20%; float: left; height: 7px;" class="bg-yellow-active"></span><span class="bg-yellow" style="display:block; width: 80%; float: left; height: 7px;"></span></div><div><span style="display:block; width: 20%; float: left; height: 20px; background: #222d32;"></span><span style="display:block; width: 80%; float: left; height: 20px; background: #f4f5f7;"></span></div></a><p class="text-center no-margin">Yellow</p></li><li style="float:left; width: 33.33333%; padding: 5px;"><a href="javascript:void(0);" data-skin="skin-blue-light" style="display: block; box-shadow: 0 0 3px rgba(0,0,0,0.4)" class="clearfix full-opacity-hover"><div><span style="display:block; width: 20%; float: left; height: 7px; background: #367fa9;"></span><span class="bg-light-blue" style="display:block; width: 80%; float: left; height: 7px;"></span></div><div><span style="display:block; width: 20%; float: left; height: 20px; background: #f9fafc;"></span><span style="display:block; width: 80%; float: left; height: 20px; background: #f4f5f7;"></span></div></a><p class="text-center no-margin" style="font-size: 12px">Blue Light</p></li><li style="float:left; width: 33.33333%; padding: 5px;"><a href="javascript:void(0);" data-skin="skin-black-light" style="display: block; box-shadow: 0 0 3px rgba(0,0,0,0.4)" class="clearfix full-opacity-hover"><div style="box-shadow: 0 0 2px rgba(0,0,0,0.1)" class="clearfix"><span style="display:block; width: 20%; float: left; height: 7px; background: #fefefe;"></span><span style="display:block; width: 80%; float: left; height: 7px; background: #fefefe;"></span></div><div><span style="display:block; width: 20%; float: left; height: 20px; background: #f9fafc;"></span><span style="display:block; width: 80%; float: left; height: 20px; background: #f4f5f7;"></span></div></a><p class="text-center no-margin" style="font-size: 12px">Black Light</p></li><li style="float:left; width: 33.33333%; padding: 5px;"><a href="javascript:void(0);" data-skin="skin-purple-light" style="display: block; box-shadow: 0 0 3px rgba(0,0,0,0.4)" class="clearfix full-opacity-hover"><div><span style="display:block; width: 20%; float: left; height: 7px;" class="bg-purple-active"></span><span class="bg-purple" style="display:block; width: 80%; float: left; height: 7px;"></span></div><div><span style="display:block; width: 20%; float: left; height: 20px; background: #f9fafc;"></span><span style="display:block; width: 80%; float: left; height: 20px; background: #f4f5f7;"></span></div></a><p class="text-center no-margin" style="font-size: 12px">Purple Light</p></li><li style="float:left; width: 33.33333%; padding: 5px;"><a href="javascript:void(0);" data-skin="skin-green-light" style="display: block; box-shadow: 0 0 3px rgba(0,0,0,0.4)" class="clearfix full-opacity-hover"><div><span style="display:block; width: 20%; float: left; height: 7px;" class="bg-green-active"></span><span class="bg-green" style="display:block; width: 80%; float: left; height: 7px;"></span></div><div><span style="display:block; width: 20%; float: left; height: 20px; background: #f9fafc;"></span><span style="display:block; width: 80%; float: left; height: 20px; background: #f4f5f7;"></span></div></a><p class="text-center no-margin" style="font-size: 12px">Green Light</p></li><li style="float:left; width: 33.33333%; padding: 5px;"><a href="javascript:void(0);" data-skin="skin-red-light" style="display: block; box-shadow: 0 0 3px rgba(0,0,0,0.4)" class="clearfix full-opacity-hover"><div><span style="display:block; width: 20%; float: left; height: 7px;" class="bg-red-active"></span><span class="bg-red" style="display:block; width: 80%; float: left; height: 7px;"></span></div><div><span style="display:block; width: 20%; float: left; height: 20px; background: #f9fafc;"></span><span style="display:block; width: 80%; float: left; height: 20px; background: #f4f5f7;"></span></div></a><p class="text-center no-margin" style="font-size: 12px">Red Light</p></li><li style="float:left; width: 33.33333%; padding: 5px;"><a href="javascript:void(0);" data-skin="skin-yellow-light" style="display: block; box-shadow: 0 0 3px rgba(0,0,0,0.4)" class="clearfix full-opacity-hover"><div><span style="display:block; width: 20%; float: left; height: 7px;" class="bg-yellow-active"></span><span class="bg-yellow" style="display:block; width: 80%; float: left; height: 7px;"></span></div><div><span style="display:block; width: 20%; float: left; height: 20px; background: #f9fafc;"></span><span style="display:block; width: 80%; float: left; height: 20px; background: #f4f5f7;"></span></div></a><p class="text-center no-margin" style="font-size: 12px;">Yellow Light</p></li></ul></div></div>
+      <!-- /.tab-pane -->
+    </div>
+  </aside>
+  
+  <div class="control-sidebar-bg" style="position: fixed; height: auto;"></div>
+</div>
+<!-- ./wrapper -->
+
+<!-- SOUND CODE -->
+<!-- Notification sound -->
+<audio id="failed">
+  <source src="https://pos.creatantech.com/theme/sound/failed.mp3" type="audio/mpeg">
+  <source src="https://pos.creatantech.com/theme/sound/failed.ogg" type="audio/ogg">
+</audio>
+<audio id="success">
+  <source src="https://pos.creatantech.com/theme/sound/success.mp3" type="audio/mpeg">
+  <source src="https://pos.creatantech.com/theme/sound/success.ogg" type="audio/ogg">
+</audio>
+<script type="text/javascript">
+  var failed_sound = document.getElementById("failed"); 
+  var success_sound = document.getElementById("success"); 
+</script>
+
+<script type="text/javascript">
+</script>
+<!-- Notification end --><!-- TABLES CODE -->
+<!-- Bootstrap 3.3.6 -->
+<script src="https://pos.creatantech.com/theme/bootstrap/js/bootstrap.min.js"></script>
+<!-- DataTables -->
+<script src="https://pos.creatantech.com/theme/plugins/DataTables-1.10.18/js/jquery.dataTables.min.js"></script>
+<script src="https://pos.creatantech.com/theme/plugins/DataTables-1.10.18/js/dataTables.bootstrap.min.js"></script>
+<script src="https://pos.creatantech.com/theme/plugins/DataTables-1.10.18/extensions/FixedHeader-3.1.4/js/dataTables.fixedHeader.min.js"></script>
+<script src="https://pos.creatantech.com/theme/plugins/DataTables-1.10.18/extensions/Responsive-2.2.2/js/dataTables.responsive.min.js"></script>
+<script src="https://pos.creatantech.com/theme/plugins/DataTables-1.10.18/extensions/Responsive-2.2.2/js/responsive.bootstrap.min.js"></script>
+<!-- end -->
+<!--  FOR EXPORT BUTTONS START -->
+<script src="https://pos.creatantech.com/theme/plugins/DataTables-1.10.18/extensions/JSZip-2.5.0/jszip.min.js"></script>
+<script src="https://pos.creatantech.com/theme/plugins/DataTables-1.10.18/extensions/pdfmake-0.1.36/pdfmake.min.js"></script>
+<script src="https://pos.creatantech.com/theme/plugins/DataTables-1.10.18/extensions/pdfmake-0.1.36/vfs_fonts.js"></script>
+<script src="https://pos.creatantech.com/theme/plugins/DataTables-1.10.18/extensions/Buttons-1.5.4/js/dataTables.buttons.min.js"></script>
+<script src="https://pos.creatantech.com/theme/plugins/DataTables-1.10.18/extensions/Buttons-1.5.4/js/buttons.flash.min.js"></script>
+<script src="https://pos.creatantech.com/theme/plugins/DataTables-1.10.18/extensions/Buttons-1.5.4/js/buttons.html5.min.js"></script>
+<script src="https://pos.creatantech.com/theme/plugins/DataTables-1.10.18/extensions/Buttons-1.5.4/js/buttons.print.min.js"></script>
+<script src="https://pos.creatantech.com/theme/plugins/DataTables-1.10.18/extensions/Buttons-1.5.4/js/buttons.colVis.min.js"></script>
+<script src="https://pos.creatantech.com/theme/plugins/DataTables-1.10.18/extensions/Buttons-1.5.4/js/buttons.bootstrap.min.js"></script>
+<!--  FOR EXPORT BUTTONS END -->
+
+<!-- SlimScroll -->
+<script src="https://pos.creatantech.com/theme/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+<!-- FastClick -->
+<script src="https://pos.creatantech.com/theme/plugins/fastclick/fastclick.js"></script>
+<!-- Select2 -->
+<script src="https://pos.creatantech.com/theme/plugins/select2/select2.full.min.js"></script>
+<!-- AdminLTE App -->
+<script>
+  var AdminLTEOptions = {
+    /*https://adminlte.io/themes/AdminLTE/documentation/index.html*/
+    sidebarExpandOnHover: true,
+    navbarMenuHeight: "200px", //The height of the inner menu
+    animationSpeed: 250,
+  };
+</script>
+<script src="https://pos.creatantech.com/theme/dist/js/app.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="https://pos.creatantech.com/theme/dist/js/demo.js"></script>
+<!-- page script -->
+
+<!-- Shortcut Keys -->
+<script src="https://pos.creatantech.com/theme/plugins/shortcuts/shortcuts.js"></script>
+
+<!--Toastr notification -->
+<script src="https://pos.creatantech.com/theme/toastr/toastr.js"></script>
+<script src="https://pos.creatantech.com/theme/toastr/toastr_custom.js"></script>
+<!--Toastr notification end-->
+
+<!-- Custom JS -->
+<script src="https://pos.creatantech.com/theme/js/special_char_check.js"></script>
+<script src="https://pos.creatantech.com/theme/js/custom.js"></script>
+
+<!-- Pace Loader -->
+<script src="https://pos.creatantech.com/theme/plugins/pace/pace.min.js"></script>
+<script type="text/javascript">
+$(document).ajaxStart(function() { Pace.restart(); }); 
+</script>  
+<!-- Sweet alert -->
+<script src="https://pos.creatantech.com/theme/js/sweetalert.min.js"></script>
+<!-- iCheck -->
+<script src="https://pos.creatantech.com/theme/plugins/iCheck/icheck.min.js"></script>
+<script>
+  $(function () {
+    $('input').iCheck({
+      checkboxClass: 'icheckbox_square-orange',
+      /*uncheckedClass: 'bg-white',*/
+      radioClass: 'iradio_square-orange',
+      increaseArea: '10%' // optional
+    });
+  });
+</script>
+<!-- Initialize Select2 Elements -->
+<script type="text/javascript"> $(".select2").select2(); </script>
+<!-- Initialize toggler -->
+<script type="text/javascript">
+  $(document).ready(function(){
+      $('[data-toggle="popover"]').popover();   
+  });
+</script>
+
+<script type="text/javascript">
+$(function($) { // this script needs to be loaded on every page where an ajax POST may happen
+  //var csrf = $('input[name="csrf_token"]').val();  // <- get token value from hidden form input
+    $.ajaxSetup({ data: {'csrf_test_name' : '44d3cda978d219a5b0cf9f914b949c20' }  }); });
+</script>
+<script type="text/javascript">
+	function show_delete_btn() {
+  var group_check_count = $(".group_check").prop("checked") ? 1: 0;
+  var check_count = $('#example2').find('input[type=checkbox]:checked').length-parseInt(group_check_count);
+
+  //console.log($('#example2 > tbody').find('.checkbox').length);
+  if(parseInt(check_count)>0){
+    $(".delete_btn").removeClass('hidden').show();
+  }    
+  else{
+    $(".delete_btn").addClass('hidden').hide();
+  }
+
+  if($('#example2 > tbody').find('.checkbox').length == check_count){
+    $(".group_check").prop("checked",true).iCheck('update');
+  }
+  else{
+    $(".group_check").prop("checked",false).iCheck('update');
+  }
+
+}
+$('.group_check').on('ifChanged', function(event) {
+    if(event.target.checked){
+      $(".column_checkbox").prop("checked",true).iCheck('update');
+    }
+    else{
+      $(".column_checkbox").prop("checked",false).iCheck('update');
+    }
+    show_delete_btn();
+});
+
+
+function call_code(){
+  $('.column_checkbox').on('ifChanged', function(event) {
+      show_delete_btn();
+  });
+}
+</script>
+<script type="text/javascript">
+$(document).ready(function () { setTimeout(function() {$( ".alert-dismissable" ).fadeOut( 1000, function() {});}, 10000); });
+</script>
+<script type="text/javascript">
+  function round_off(input=0){
+          return input;
+      }
+</script>
+<script>
+  function tax_disabled(){
+          return false;
+      }
+</script>
+<script src="https://pos.creatantech.com/theme/js/state.js"></script>
+<!-- page script -->
+ <script type="text/javascript">
+var table;
+$(document).ready(function() {
+    //datatables
+    table = $('#example2').DataTable({ 
+
+        "processing": true, //Feature control the processing indicator.
+        "serverSide": true, //Feature control DataTables' server-side processing mode.
+        "order": [], //Initial no order.
+        "responsive": true,
+
+        // Load data for the table's content from an Ajax source
+        "ajax": {
+            "url": "https://pos.creatantech.com/index.php/state/ajax_list",
+            "type": "POST"
+        },
+
+        //Set column definition initialisation properties.
+        "columnDefs": [
+        { 
+            "targets": [ 3 ], //first column / numbering column
+            "orderable": false, //set not orderable
+        },
+        ],
+    });
+    new $.fn.dataTable.FixedHeader( table );
+});
+</script>
+<script type="text/javascript">
+$(document).ready(function () { setTimeout(function() {$( ".alert-dismissable" ).fadeOut( 1000, function() {});}, 3000); });
+</script>
+<!-- Make sidebar menu hughlighter/selector -->
+<script>$(".state-list-active-li").addClass("active");</script>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="https://pos.creatantech.com/theme/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
+<script src="https://pos.creatantech.com/theme/plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+<script  src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+</body>
+</html>
